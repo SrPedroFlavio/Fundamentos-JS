@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+let numeroRNG = Math.floor(Math.random() * 20) + 1 //number rng
+
+let palpite = parseInt(prompt("Qual o número?????????????:D"))
+
+if(numeroRNG == palpite){
+    console.log("Boa Acertou, GG");
+} else{
+    console.log("Nem perto, vergonha")
+}
+
+console.log(numeroRNG);
+
+
+    let tentativas = 5
+    let ganhou =  false
+    let numeroRGN = Math.floor(Math.random() * 25) + 1 
+
+while(!ganhou && tentativas > 0){
+     let palpite = parseInt(prompt("Qual é o seu palpite"))
+
+     if(numeroRGN == palpite){
+        alert("GG, Acertou, Toma R$2500,00");
+        ganhou = true
+        
+    } else if(palpite < numeroRGN){
+        alert(`Perde R$1000,00, chuta mais pra cima. Tens R$${tentativas}000,00 no cartão`)
+    } else if(palpite > numeroRGN){
+        alert(`Perde R$1000,00, chuta mais pra baixo. Tens R$${tentativas}000,00 no cartão `)
+        tentativas--
+    } else if(tentativas = 0){
+        alert(alert(`Ihh erro tudo, fico pobre trouxa.`))
+    }
+    
+    
+        
+    
+          
+        
+    }
+
+
+
+
+
+console.log(numeroRGN);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
