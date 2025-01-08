@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let saldo = 10
+
+        function operacaoBancaria() {
+            let continuar = true
+
+            while (continuar) {
+                let operacao = prompt("Qual operação você deseja fazer???? (1.depositar/2.sacar/3.sair)").toLowerCase()
+
+                if (operacao === "1") {
+
+                    let quantia = parseFloat(prompt("Qual valor você quer depositar"))
+
+                    Depositar(quantia)
+
+
+
+                } else if (operacao == "2") {
+                    let quantia = parseFloat(prompt("Qual valor você deseja sacar?"))
+
+                    Sacar(quantia)
+
+                } else if (operacao == "3") {
+                    continuar = false
+                    alert(`Obrigado por usar Banco Bet, Saldo ${saldo}`)
+                }
+
+            }
+        }
+
+
+
+
+        operacaoBancaria()
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+        function Depositar(quantia) {
+
+            if (quantia <= 0) {
+                alert("C ta besta?")
+
+            } else {
+                saldo = saldo + quantia
+                alert(`Deposito realizado! Saldo atual ${saldo}`)
+            }
+        }
+
+        function Sacar(quantia) {
+            if (quantia >= saldo) {
+                alert("Saldo insulficiente")
+
+            } else {
+                if (quantia <= 0) {
+                    alert("Valor inválido")
+                } else {
+                    saldo = saldo - quantia
+                    alert(`Saque realizado com sucesso! Saldo atual ${saldo}`)
+                }
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
