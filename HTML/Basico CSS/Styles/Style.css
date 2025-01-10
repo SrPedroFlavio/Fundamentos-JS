@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(130, 136, 136);
+}
+
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-family:cursive;
+    color: rgb(29, 8, 126);
+    
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    background-color: rgb(192, 192, 192);
+   
+    /*Largura*/
+    width: 70%;ht ;
+    
+    /*Altura*/
+    height: 200px;
+
+    border:5px solid #777;
+
+    /*pra todo lado*/
+    margin: 250px 20px 10px 250px;
+
+    /*Arrednodar*/
+    border-radius: 20px;
+    
+    text-align: center;
+
+}
+
+
+strong {
+    background-color: white;
+    margin-right: 100px;
+    
+}
+
+.Cristo{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 3.5em;
+}
+#mes{
+    text-decoration:underline
+}
+
+img{
+    width: 100px;
+    margin-right: -190px;
+}
